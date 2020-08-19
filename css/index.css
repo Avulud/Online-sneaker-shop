@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Aldrich&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+:root{
+    font-family: 'Architects Daughter', cursive;
+}
+h1,h2,p,div {
+    margin: 0;
+    padding: 0;}
+.logo h1{
+    font-family: 'Aldrich', sans-serif; 
+    font-size: 26px;
+    text-align: right;
+    text-shadow: 0 0 1em purple;}
+.logo {
+    margin: 0;
+    padding: 0;}
+header .menu{
+    display: flex;
+    justify-content: space-around;}
+header .menu a{
+    text-decoration: none;
+    font-family: 'Aldrich', sans-serif;
+    color: black;
+    }
+header .menu a:hover{
+    text-shadow: 0 0 1em purple;
+    }
+main .promo_nike h3{
+    text-align: center;
+}
+main .promo_nike img{
+   width:  100% ;
+}
+main .promo_nike button{
+    width: 100%;
+}
+main .promo_new_balance img{
+    width: 100% ;
+}
