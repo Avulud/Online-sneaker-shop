@@ -1,39 +1,152 @@
-@import url('https://fonts.googleapis.com/css2?family=Aldrich&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
-:root{
+@import url('https://fonts.googleapis.com/css2?family=Aldrich&display=swap'); @import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap'); 
+:root {
+    --shadow-color:purple;
+    --text-bg-color: white;
+    --text-color:black;
+    --sale-color:red;
+    --mob-text-bg-color:rgb(175, 175, 175);
     font-family: 'Architects Daughter', cursive;
+    
+
 }
+
 h1,h2,p,div {
     margin: 0;
-    padding: 0;}
-.logo h1{
-    font-family: 'Aldrich', sans-serif; 
+    padding: 0;
+}
+.sale{
+    background-image: url(../image/sneaker_fon.jpg);
+    background-size: auto;
+    padding-bottom: 10px;
+    
+}
+.karusel_sale{
+    display: flex;
+    justify-content: space-around;
+}
+.sale a{
+    text-decoration: none;
+    color: var(--text-color);
+}
+.sale a:hover{
+    text-shadow: 0 0 1em var(--shadow-color);
+}
+.sale h2{
+    width: 40%;
+    display: grid;
+    justify-content: center;
+    background-color: var(--text-bg-color);
+    margin-left: 30%;
+    margin-top: 0%;
+    margin-bottom: 5px;
+}
+.karusel_sale img{
+    width: 30%;
+}
+.karusel_sale img:hover{
+    width: 35%;
+    box-shadow: 0 0 1em var(--shadow-color);
+}
+.sale button{
+   display: block;
+   margin:10px auto 0px auto;
+   font-family: 'AldRich';
+   color:var(--sale-color);
+}
+.sale button:hover{
+    width: 5rem;
+    height: 2rem;
+    box-shadow: 0 0 1em var(--shadow-color);
+    font-size: 1.5rem;
+}
+.logo h1 {
+    font-family: 'Aldrich', sans-serif;
     font-size: 26px;
-    text-align: right;
-    text-shadow: 0 0 1em purple;}
+    text-align: left;
+    text-shadow: 0 0 1em var(--shadow-color);
+}
+
 .logo {
     margin: 0;
-    padding: 0;}
-header .menu{
+    padding: 0;
+}
+
+header .menu {
     display: flex;
-    justify-content: space-around;}
-header .menu a{
+    justify-content: space-around;
+}
+
+header .menu a {
     text-decoration: none;
     font-family: 'Aldrich', sans-serif;
     color: black;
-    }
-header .menu a:hover{
-    text-shadow: 0 0 1em purple;
-    }
-main .promo_nike h3{
+}
+
+header .menu a:hover {
+    text-shadow: 0 0 1em var(--shadow-color);
+}
+
+main .promo_nike h3 {
     text-align: center;
 }
-main .promo_nike img{
-   width:  100% ;
+
+main .promo_nike img {
+    width: 100% ;
 }
-main .promo_nike button{
+
+main .promo_nike button {
     width: 100%;
 }
-main .promo_new_balance img{
+
+main .promo_new_balance img {
     width: 100% ;
+}
+.top{
+    display: none;
+}
+@media (max-width:700px){
+    .top{
+        display: block;
+        visibility: hidden;
+    }
+    .logo {
+        height: 200px;
+        background-image:url(../image/sneaker_fon.jpg);
+        border-bottom: 1px solid var(--text-color);
+    }
+    .logo h1{
+        border-bottom: 1px solid var(--text-color);
+        border-top: 1px solid var(--text-color);
+        background-color: var(--text-bg-color);
+        text-align: right;
+        padding-right:5px ;
+        
+    }
+    .sale{
+        background-image: none;
+    }
+    .hide-sale{
+        display: none;
+    }
+    .top-sale{
+        display: flex;
+    }
+    .karusel_sale img{
+        width: 100%;
+        border-bottom: 1px solid var(--text-color);
+        border-top: 1px solid var(--text-color);
+    }
+    .sale h2{
+        width: 100%;
+        margin: 0%;
+        background-color:var(--mob-text-bg-color) ;
+    }
+    .sale button {
+        width: 5rem;
+    height: 2rem;
+    font-size: 1.5rem;
+    }
+    body{
+        border: 1px solid var(--text-color);
+    }
 }
