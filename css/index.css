@@ -1,37 +1,39 @@
-@import url('https://fonts.googleapis.com/css2?family=Aldrich&display=swap'); @import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap'); 
-:root {
-    --shadow-color:purple;
-    --text-bg-color: white;
-    --text-color:black;
-    --sale-color:red;
-    --mob-text-bg-color:rgb(175, 175, 175);
+@import url('https://fonts.googleapis.com/css2?family=Aldrich&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap'); :root {
+    --shadow-color:purple; 
+    --text-bg-color: white; 
+    --text-color:black; 
+    --sale-color:red; 
+    --mob-text-bg-color:rgb(175, 175, 175); 
     font-family: 'Architects Daughter', cursive;
-    
-
 }
 
 h1,h2,p,div {
     margin: 0;
     padding: 0;
 }
-.sale{
+
+.sale {
     background-image: url(../image/sneaker_fon.jpg);
     background-size: auto;
     padding-bottom: 10px;
-    
 }
-.karusel_sale{
+
+.karusel_sale {
     display: flex;
     justify-content: space-around;
 }
-.sale a{
+
+.sale a {
     text-decoration: none;
     color: var(--text-color);
 }
-.sale a:hover{
+
+.sale a:hover {
     text-shadow: 0 0 1em var(--shadow-color);
 }
-.sale h2{
+
+.sale h2 {
     width: 40%;
     display: grid;
     justify-content: center;
@@ -40,26 +42,31 @@ h1,h2,p,div {
     margin-top: 0%;
     margin-bottom: 5px;
 }
-.karusel_sale img{
+
+.karusel_sale img {
     width: 30%;
 }
-.karusel_sale img:hover{
+
+.karusel_sale img:hover {
     width: 35%;
     box-shadow: 0 0 1em var(--shadow-color);
 }
-.sale button{
-   display: block;
-   text-align: center;
-   margin:10px auto 0px auto;
-   font-family: 'AldRich';
-   color:var(--sale-color);
+
+.sale button {
+    display: block;
+    text-align: center;
+    margin: 10px auto 0px auto;
+    font-family: 'AldRich';
+    color: var(--sale-color);
 }
-.sale button:hover{
+
+.sale button:hover {
     width: 5rem;
     height: 2rem;
     box-shadow: 0 0 1em var(--shadow-color);
     font-size: 1.5rem;
 }
+
 .logo h1 {
     font-family: 'Aldrich', sans-serif;
     font-size: 26px;
@@ -102,67 +109,104 @@ main .promo_nike button {
 main .promo_new_balance img {
     width: 100% ;
 }
-.top{
+
+.top {
     display: none;
 }
-.sale h3{
+
+.sale h3 {
     display: none;
 }
-@media (max-width:700px){
-    .top{
+
+.sneakers {
+    display: flex;
+    justify-content: space-between;
+}
+.sneakers img {
+    width: 100%;
+}
+
+@media (max-width: 700px) {
+    .top {
         display: block;
         visibility: hidden;
     }
+
     .logo {
         height: 200px;
-        background-image:url(../image/sneaker_fon.jpg);
+        background-image: url(../image/sneaker_fon.jpg);
         border-bottom: 1px solid var(--text-color);
     }
-    .logo h1{
+
+    .logo h1 {
         border-bottom: 1px solid var(--text-color);
         border-top: 1px solid var(--text-color);
         background-color: var(--text-bg-color);
         text-align: right;
-        padding-right:5px ;
-        
+        padding-right: 5px ;
     }
-    .sale{
+
+    .sale {
         background-image: none;
     }
-    .hide-sale{
+
+    .hide-sale {
         display: none;
     }
-    .top-sale{
+
+    .top-sale {
         display: flex;
     }
-    .karusel_sale img{
+
+    .karusel_sale img {
         width: 100%;
         border-bottom: 1px solid var(--text-color);
         border-top: 1px solid var(--text-color);
     }
-    .sale h2{
+
+    .sale h2 {
         width: 100%;
         margin: 0%;
-        background-color:var(--mob-text-bg-color) ;
+        background-color: var(--mob-text-bg-color) ;
     }
+
     .sale button {
         width: 5rem;
-    height: 2rem;
-    font-size: 1.5rem;
+        height: 2rem;
+        font-size: 1.5rem;
     }
-    body{
+
+    body {
         border: 1px solid var(--text-color);
     }
-    header .menu{
+
+    header .menu {
         display: none;
     }
-    .sale h3{
+
+    .sale h3 {
         display: block;
         width: 50%;
         left: 50%;
         margin-left: 25%;
         margin-top: 15px;
         text-align: center;
-        margin-bottom: 0;   
+        margin-bottom: 0;
+    }
+
+    .sneakers .medium-screen-sneakers {
+        display: none;
+    }
+}
+
+@media (max-width: 1200px) {
+    .sneakers .wide-screen-sneakers {
+        display: none;
+    }
+}
+
+@media (max-width: 450px) {
+    .sneakers .small-screen-sneakers {
+        display: none;
     }
 }
