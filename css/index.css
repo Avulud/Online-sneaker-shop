@@ -166,7 +166,9 @@ footer h6{
     .top-sale {
         display: flex;
     }
-
+    .karusel_sale{
+        display: flex;
+    }
     .karusel_sale img {
         width: 100%;
         border-bottom: 1px solid var(--text-color);
@@ -208,7 +210,18 @@ footer h6{
     .sneakers{
         border-bottom: 1px solid var(--text-color);
     }
-    
+    .social-icons img{
+        height: 80px;
+    }
+    footer h6{
+        font-size: 2rem;
+    }
+    .social{
+        justify-content: space-around;
+    }
+    footer{
+        background-color: var(--text-bg-color);
+    }
 }
 @media (max-width: 1200px) {
     .sneakers .wide-screen-sneakers {
