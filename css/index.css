@@ -106,15 +106,39 @@ main .promo_new_balance img {
     display: block;
     text-align: center;
 }
-.social-icons img{
+.social-icons img,footer nav img{
     height:25px;
+    margin-left: 10px;
 }
 .social{
     display: flex;
-    justify-content: space-around;
+    justify-content: start;
+    margin-left: 10px;
+    margin-top:10px;
 }
 footer{
     background-color: rgb(100, 100, 100);
+}
+footer nav{
+    margin-left: 10px;
+    padding-top: 10px;
+}
+footer div{
+    display: flex;
+    justify-content: space-between;
+}
+footer h2{
+    padding-top: 50px;
+    margin-right: 60px;
+    font-family: 'Aldrich';
+    text-shadow: 0 0 0.5em var(--text-color);
+    font-size: 50px;
+
+}
+footer h6{
+    margin: 0%;
+    text-align: right;
+    margin-right: 5px;
 }
 @media (max-width: 700px) {
     .top {
@@ -174,7 +198,7 @@ footer{
         margin-bottom: 0;
     }
 
-    .sneakers .medium-screen-sneakers,header .menu,.hide-sale {
+    .sneakers .medium-screen-sneakers,header .menu,.hide-sale,footer div nav,footer h2{
         display: none;
     }
     .header-sneakers{
@@ -184,6 +208,7 @@ footer{
     .sneakers{
         border-bottom: 1px solid var(--text-color);
     }
+    
 }
 @media (max-width: 1200px) {
     .sneakers .wide-screen-sneakers {
