@@ -28,7 +28,7 @@ h1,h2,p,div {
     display: flex;
     justify-content: space-around;
 }
-a:hover,.promo_new_balance h2:hover, .promo_nike h2:hover,.header-sneakers:hover {
+a:hover,.promo_new_balance h2:hover, .promo_nike h2:hover,.header-sneakers:hover,.header-news:hover {
     text-shadow: 0 0 1em var(--shadow-color);
 }
 .sale h2 {
@@ -102,7 +102,7 @@ main .promo_new_balance img {
 .sneakers img {
     width: 100%;
 }
-.promo_new_balance h2, .promo_nike h2,.header-sneakers{
+.promo_new_balance h2, .promo_nike h2,.header-sneakers,.header-news{
     display: block;
     text-align: center;
 }
@@ -140,6 +140,18 @@ footer h6{
     text-align: right;
     margin-right: 5px;
 }
+.news img{
+    width: 200px;
+}
+.news{
+display: flex;
+justify-content: space-around;
+}
+.first-column div,.second-column div{
+    display: flex;
+
+}
+
 @media (max-width: 700px) {
     .top {
         display: block;
@@ -175,7 +187,7 @@ footer h6{
         border-top: 1px solid var(--text-color);
     }
 
-    .sale h2,.header-sneakers {
+    .sale h2,.header-sneakers,.header-news {
         width: 100%;
         margin: 0%;
         background-color: var(--mob-text-bg-color) ;
@@ -200,10 +212,10 @@ footer h6{
         margin-bottom: 0;
     }
 
-    .sneakers .medium-screen-sneakers,header .menu,.hide-sale,footer div nav,footer h2{
+    .second-column,.sneakers .medium-screen-sneakers,header .menu,.hide-sale,footer div nav,footer h2{
         display: none;
     }
-    .header-sneakers{
+    .header-sneakers,.header-news{
         border-top:1px solid var(--text-color);
         border-bottom: 1px solid var(--text-color);
     }
@@ -211,10 +223,11 @@ footer h6{
         border-bottom: 1px solid var(--text-color);
     }
     .social-icons img{
-        height: 80px;
+        height: 70px;
     }
     footer h6{
-        font-size: 2rem;
+        font-size: 1rem;
+        text-align: center;
     }
     .social{
         justify-content: space-around;
