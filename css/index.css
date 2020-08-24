@@ -43,6 +43,7 @@ a:hover,.promo_new_balance h2:hover, .promo_nike h2:hover,.header-sneakers:hover
 .karusel_sale img {
     width: 30%;
     animation: fade-in 2s ease;
+    height: auto;
 }
 .karusel_sale img:hover {
     width: 35%;
@@ -141,7 +142,8 @@ footer h6{
     margin-right: 5px;
 }
 .news img{
-    width: 200px;
+    width: 50%;
+    height: 100%;
 }
 .news{
 display: flex;
@@ -183,6 +185,7 @@ justify-content: space-between;
     }
     .karusel_sale img {
         width: 100%;
+        height: 100%;
         border-bottom: 1px solid var(--text-color);
         border-top: 1px solid var(--text-color);
     }
