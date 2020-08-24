@@ -28,7 +28,7 @@ h1,h2,p,div {
     display: flex;
     justify-content: space-between;
 }
-a:hover,.promo_new_balance h2:hover, .promo_nike h2:hover,.header-sneakers:hover,.header-news:hover {
+.curent-page,a:hover,.promo_new_balance h2:hover, .promo_nike h2:hover,.header-sneakers:hover,.header-news:hover {
     text-shadow: 0 0 1em var(--shadow-color);
 }
 .sale h2 {
@@ -49,12 +49,16 @@ a:hover,.promo_new_balance h2:hover, .promo_nike h2:hover,.header-sneakers:hover
     width: 35%;
     box-shadow: 0 0 1em var(--shadow-color);
 }
-.sale button {
+.sale button,.sneakers button {
     display: block;
     text-align: center;
     margin: 10px auto 0px auto;
     font-family: 'AldRich';
     color: var(--sale-color);
+}
+.sneakers button{
+    color: var(--text-color);
+    margin-bottom: 20px;
 }
 .sale button:hover {
     width: 5rem;
@@ -97,6 +101,7 @@ main .promo_new_balance img {
     display: none;
 }
 .sneakers {
+    margin-top: 20px;
     display: flex;
     justify-content: space-between;
 }
@@ -146,11 +151,14 @@ footer h6{
     height: 100%;
 }
 .news{
-display: flex;
-justify-content: space-between;
+    margin-top:20px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
 }
 .first-column div,.second-column div{
     display: flex;
+    margin:10px 10px 10px 10px;
 
 }
 
@@ -196,10 +204,10 @@ justify-content: space-between;
         background-color: var(--mob-text-bg-color) ;
     }
 
-    .sale button {
+    .sale button, .sneakers button {
         width: 5rem;
         height: 2rem;
-        font-size: 1.5rem;
+        font-size: 1rem;
     }
 
     body {
@@ -238,6 +246,7 @@ justify-content: space-between;
     footer{
         background-color: var(--text-bg-color);
     }
+    .karusel_sale bu
 }
 @media (max-width: 1200px) {
     .sneakers .wide-screen-sneakers {
