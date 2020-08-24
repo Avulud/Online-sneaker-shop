@@ -1,11 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Aldrich&display=swap'); 
-@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap'); :root {
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap'); 
+:root {
     --shadow-color:purple; 
     --text-bg-color: white; 
     --text-color:black; 
     --sale-color:red; 
     --mob-text-bg-color:rgb(175, 175, 175); 
     font-family: 'Architects Daughter', cursive;
+}
+hr{
+    color: var(--text-color);
+    border: none;
+    background-color: var(--text-color);
+    height: 1px;
 }
 a{
     text-decoration: none;
@@ -151,6 +158,7 @@ footer h6{
     height: 100%;
 }
 .news{
+    font-size: 20px;
     margin-top:20px;
     display: flex;
     justify-content: space-between;
@@ -171,7 +179,6 @@ footer h6{
     .logo {
         height: 200px;
         background-image: url(../image/sneaker_fon.jpg);
-        border-bottom: 1px solid var(--text-color);
     }
 
     .logo h1 {
@@ -185,23 +192,20 @@ footer h6{
     .sale {
         background-image: none;
     }
-    .top-sale {
-        display: flex;
-    }
-    .karusel_sale{
-        display: flex;
-    }
     .karusel_sale img {
         width: 100%;
         height: 100%;
-        border-bottom: 1px solid var(--text-color);
-        border-top: 1px solid var(--text-color);
     }
-
+    .karusel_sale{
+        border: 1px solid var(--text-color);
+        margin: 10px 10px 10px 10px;
+    }
     .sale h2,.header-sneakers,.header-news {
         width: 100%;
         margin: 0%;
-        background-color: var(--mob-text-bg-color) ;
+        background-color: var(--mob-text-bg-color);
+        border-top:1px solid var(--text-color);
+        border-bottom: 1px solid var(--text-color); 
     }
 
     .sale button, .sneakers button {
@@ -226,10 +230,6 @@ footer h6{
     .second-column,.sneakers .medium-screen-sneakers,header .menu,.hide-sale,footer div nav,footer h2{
         display: none;
     }
-    .header-sneakers,.header-news{
-        border-top:1px solid var(--text-color);
-        border-bottom: 1px solid var(--text-color);
-    }
     .sneakers{
         border-bottom: 1px solid var(--text-color);
     }
@@ -246,7 +246,13 @@ footer h6{
     footer{
         background-color: var(--text-bg-color);
     }
-    .karusel_sale bu
+    .news div div,.sneakers div {
+        border: 1px solid var(--text-color);
+    }
+    .sneakers div{
+        border: 1px solid var(--text-color);
+        margin: 10px 10px 10px 10px;
+    }
 }
 @media (max-width: 1200px) {
     .sneakers .wide-screen-sneakers {
