@@ -26,7 +26,7 @@ h1,h2,p,div {
 }
 .karusel_sale {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 a:hover,.promo_new_balance h2:hover, .promo_nike h2:hover,.header-sneakers:hover,.header-news:hover {
     text-shadow: 0 0 1em var(--shadow-color);
@@ -145,7 +145,7 @@ footer h6{
 }
 .news{
 display: flex;
-justify-content: space-around;
+justify-content: space-between;
 }
 .first-column div,.second-column div{
     display: flex;
