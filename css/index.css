@@ -1,45 +1,55 @@
-@import url('https://fonts.googleapis.com/css2?family=Aldrich&display=swap'); 
-@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap'); 
-:root {
-    --shadow-color:purple; 
-    --text-bg-color: white; 
-    --text-color:black; 
-    --sale-color:red; 
-    --mob-text-bg-color:rgb(175, 175, 175); 
-}
+@import url('https://fonts.googleapis.com/css2?family=Aldrich&display=swap'); @import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap'); :root {
+    --shadow-color:purple; --text-bg-color: white; --text-color:black; --sale-color:red; --mob-text-bg-color:rgb(175, 175, 175); }
 
-.sale, .promo_new_balance, .promo_nike, .sneakers, .news{
+.sale, .promo_new_balance, .promo_nike, .sneakers, .news {
     margin-bottom: 50px;
     margin-top: 50px;
 }
+
 .carousel-caption {
     color: var(--text-color);
 }
+
 .menu {
     font-size: 1.1rem;
 }
-.nav-item{
+
+.nav-item {
     margin-left: 50px;
 }
-.navbar{   position: fixed;   top: 0;   left: 0;   z-index: 9999;   width: 100%;   height: 50px;   background-color: #00a087; }
-h1{
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    width: 100%;
+    height: 50px;
+    background-color: #00a087;
+}
+
+h1 {
     display: none;
 }
-hr{
+
+hr {
     color: var(--text-color);
     border: none;
     background-color: var(--text-color);
     height: 1px;
 }
-body{
-    scroll-behavior: smooth;
+
+body {
+    transition: all 1s ease-in;
     font-family: 'Architects Daughter', cursive;
 }
-body a:hover{
+
+body a:hover {
     text-decoration: none;
     color: var(--text-color);
 }
-body a{
+
+body a {
     text-decoration: none;
     color: var(--text-color);
 }
@@ -47,11 +57,12 @@ body a{
 h1,h2,p,div {
     margin: 0;
     padding: 0;
-    
 }
+
 .curent-page,a:hover,.promo_new_balance h2:hover, .promo_nike h2:hover,.header-sneakers:hover,.header-news:hover {
     text-shadow: 0 0 1em var(--shadow-color);
 }
+
 .sale h2 {
     width: 40%;
     display: grid;
@@ -61,6 +72,7 @@ h1,h2,p,div {
     margin-top: 0%;
     margin-bottom: 5px;
 }
+
 .sale button,.sneakers button {
     display: block;
     text-align: center;
@@ -68,7 +80,8 @@ h1,h2,p,div {
     font-family: 'AldRich';
     color: var(--sale-color);
 }
-.sneakers button{
+
+.sneakers button {
     color: var(--text-color);
     margin-bottom: 20px;
 }
@@ -84,92 +97,131 @@ main .promo_nike img {
     animation: fade-in 4s ease;
     width: 100% ;
 }
+
 main .promo_nike button,.promo_new_balance button {
     animation: fade-in 2s ease;
     width: 100%;
 }
+
 main .promo_new_balance img {
     animation: fade-in 4s ease;
     width: 100% ;
 }
+
 .top,.sale h3 {
     display: none;
 }
+
 .sneakers {
     margin-top: 20px;
     display: flex;
     justify-content: space-between;
 }
+
 .sneakers img {
     width: 100%;
 }
-.promo_new_balance h2, .promo_nike h2,.header-sneakers,.header-news{
+
+.promo_new_balance h2, .promo_nike h2,.header-sneakers,.header-news {
     display: block;
     text-align: center;
 }
-.social-icons img,footer nav img{
-    height:25px;
+
+.social-icons img,footer nav img {
+    height: 25px;
     margin-left: 10px;
 }
-.social{
+
+.social {
     display: flex;
     justify-content: start;
     margin-left: 10px;
-    margin-top:10px;
+    margin-top: 10px;
 }
-footer{
+
+footer {
     background-color: rgb(100, 100, 100);
 }
-footer nav{
+
+footer nav {
     margin-left: 10px;
     padding-top: 10px;
 }
-footer div{
+
+footer div {
     display: flex;
     justify-content: space-between;
 }
-footer h2{
+
+footer h2 {
     padding-top: 50px;
     margin-right: 60px;
     font-family: 'Aldrich';
     text-shadow: 0 0 0.5em var(--text-color);
     font-size: 50px;
-
 }
-footer h6{
+
+footer h6 {
     margin: 0%;
     text-align: right;
     margin-right: 5px;
 }
-.news img{
+
+.news img {
     width: 50%;
     height: 100%;
 }
-.news{
+
+.news {
     font-size: 20px;
-    margin-top:20px;
+    margin-top: 20px;
     display: flex;
     justify-content: space-between;
     margin-bottom: 20px;
 }
-.first-column div,.second-column div{
-    display: flex;
-    margin:10px 10px 10px 10px;
 
+.first-column div,.second-column div {
+    display: flex;
+    margin: 10px 10px 10px 10px;
+}
+
+.button-bar {
+    display: none;
 }
 
 @media (max-width: 700px) {
+    .button-bar {
+        display: flex;
+        align-self: center;
+    }
+
+    .button-bar button {
+        background-color: var(--mob-text-bg-color);
+        color: var(--text-color);
+    }
+
+    .dropdown-menu {
+        width: 100%;
+        text-align: center;
+    }
+
+    .sale {
+        margin-top: 0;
+    }
+
     .top {
         display: block;
         visibility: hidden;
     }
-    h1{display: block;}
+
+    h1 {
+        display: block;
+    }
+
     .sale h2,.header-sneakers,.header-news {
         width: 100%;
         margin: 0%;
         background-color: var(--mob-text-bg-color);
-        border-top:1px solid var(--text-color);
-        border-bottom: 1px solid var(--text-color); 
     }
 
     .sale button, .sneakers button {
@@ -181,6 +233,7 @@ footer h6{
     body {
         border: 1px solid var(--text-color);
     }
+
     .sale h3 {
         display: block;
         width: 50%;
@@ -191,29 +244,32 @@ footer h6{
         margin-bottom: 0;
     }
 
-    .second-column,.sneakers .medium-screen-sneakers,header .menu,.hide-sale,footer div nav,footer h2{
+    .second-column,.sneakers .medium-screen-sneakers,header .menu,.hide-sale,footer div nav,footer h2 {
         display: none;
     }
-    .sneakers{
-        border-bottom: 1px solid var(--text-color);
-    }
-    .social-icons img{
+
+    .social-icons img {
         height: 70px;
     }
-    footer h6{
+
+    footer h6 {
         font-size: 1rem;
         text-align: center;
     }
-    .social{
+
+    .social {
         justify-content: space-around;
     }
-    footer{
+
+    footer {
         background-color: var(--text-bg-color);
     }
+
     .news div div,.sneakers div {
         border: 1px solid var(--text-color);
     }
-    .sneakers div{
+
+    .sneakers div {
         border: 1px solid var(--text-color);
         margin: 10px 10px 10px 10px;
     }
@@ -224,15 +280,18 @@ footer h6{
         display: none;
     }
 }
+
 @media (max-width: 450px) {
     .small-screen-sneakers {
         display: none;
     }
 }
+
 @keyframes fade-in {
     0% {
         opacity: 0;
     }
+
     100% {
         opacity: 1;
     }
