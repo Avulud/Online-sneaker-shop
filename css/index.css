@@ -6,7 +6,24 @@
     --text-color:black; 
     --sale-color:red; 
     --mob-text-bg-color:rgb(175, 175, 175); 
-    font-family: 'Architects Daughter', cursive;
+}
+
+.sale, .promo_new_balance, .promo_nike, .sneakers, .news{
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+.carousel-caption {
+    color: var(--text-color);
+}
+.menu {
+    font-size: 1.1rem;
+}
+.nav-item{
+    margin-left: 50px;
+}
+.navbar{   position: fixed;   top: 0;   left: 0;   z-index: 9999;   width: 100%;   height: 50px;   background-color: #00a087; }
+h1{
+    display: none;
 }
 hr{
     color: var(--text-color);
@@ -14,26 +31,23 @@ hr{
     background-color: var(--text-color);
     height: 1px;
 }
-a{
+body{
+    scroll-behavior: smooth;
+    font-family: 'Architects Daughter', cursive;
+}
+body a:hover{
     text-decoration: none;
     color: var(--text-color);
 }
-body{
-    scroll-behavior: smooth;
+body a{
+    text-decoration: none;
+    color: var(--text-color);
 }
+
 h1,h2,p,div {
     margin: 0;
     padding: 0;
     
-}
-.sale {
-    background-image: url(../image/sneaker_fon.jpg);
-    background-size: auto;
-    padding-bottom: 10px;
-}
-.karusel_sale {
-    display: flex;
-    justify-content: space-between;
 }
 .curent-page,a:hover,.promo_new_balance h2:hover, .promo_nike h2:hover,.header-sneakers:hover,.header-news:hover {
     text-shadow: 0 0 1em var(--shadow-color);
@@ -47,15 +61,6 @@ h1,h2,p,div {
     margin-top: 0%;
     margin-bottom: 5px;
 }
-.karusel_sale img {
-    width: 30%;
-    animation: fade-in 2s ease;
-    height: auto;
-}
-.karusel_sale img:hover {
-    width: 35%;
-    box-shadow: 0 0 1em var(--shadow-color);
-}
 .sale button,.sneakers button {
     display: block;
     text-align: center;
@@ -67,31 +72,14 @@ h1,h2,p,div {
     color: var(--text-color);
     margin-bottom: 20px;
 }
-.sale button:hover {
-    width: 5rem;
-    height: 2rem;
-    box-shadow: 0 0 1em var(--shadow-color);
-    font-size: 1.5rem;
-}
-.logo h1 {
+
+.navbar-brand, h1 {
     font-family: 'Aldrich', sans-serif;
-    font-size: 26px;
+    font-size: 34px;
     text-align: left;
     text-shadow: 0 0 1em var(--shadow-color);
 }
-.logo {
-    margin: 0;
-    padding: 0;
-}
-header .menu {
-    display: flex;
-    justify-content: space-around;
-}
-header .menu a {
-    text-decoration: none;
-    font-family: 'Aldrich', sans-serif;
-    color: black;
-}
+
 main .promo_nike img {
     animation: fade-in 4s ease;
     width: 100% ;
@@ -175,31 +163,7 @@ footer h6{
         display: block;
         visibility: hidden;
     }
-
-    .logo {
-        height: 200px;
-        background-image: url(../image/sneaker_fon.jpg);
-    }
-
-    .logo h1 {
-        border-bottom: 1px solid var(--text-color);
-        border-top: 1px solid var(--text-color);
-        background-color: var(--text-bg-color);
-        text-align: right;
-        padding-right: 5px ;
-    }
-
-    .sale {
-        background-image: none;
-    }
-    .karusel_sale img {
-        width: 100%;
-        height: 100%;
-    }
-    .karusel_sale{
-        border: 1px solid var(--text-color);
-        margin: 10px 10px 10px 10px;
-    }
+    h1{display: block;}
     .sale h2,.header-sneakers,.header-news {
         width: 100%;
         margin: 0%;
@@ -254,13 +218,14 @@ footer h6{
         margin: 10px 10px 10px 10px;
     }
 }
+
 @media (max-width: 1200px) {
     .sneakers .wide-screen-sneakers {
         display: none;
     }
 }
 @media (max-width: 450px) {
-    .small-screen-sneakers, .promo_new_balance, .promo_nike,hr {
+    .small-screen-sneakers {
         display: none;
     }
 }
