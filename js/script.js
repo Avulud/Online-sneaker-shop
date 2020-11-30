@@ -10,3 +10,31 @@ for (let smoothLink of smoothLinks) {
         });
     });
 };
+    $(function(){
+         
+        $('#accordion').accordion();
+        $('#tabs').tabs();
+        $( "#slider" ).slider({
+            range: true,
+            values: [ 17, 67 ]
+        });
+        $( "#dialog" ).dialog({
+            autoOpen: false,
+            width: 400,
+            buttons: [
+                {
+                    text: "Ok",
+                    click: function() {
+                        $( this ).dialog( "close" );
+                    }
+                },
+                {
+                    text: "Cancel",
+                    click: function() {
+                        $( this ).dialog( "close" );
+                    }
+                }
+            ]
+        });
+        $('#ui-id-4').css({"height":"auto"});
+    });
