@@ -273,6 +273,9 @@ footer h6 {
         border: 1px solid var(--text-color);
         margin: 10px 10px 10px 10px;
     }
+    .news p{
+        width: 50%;
+    }
 }
 
 @media (max-width: 1200px) {
